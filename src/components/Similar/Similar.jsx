@@ -7,7 +7,7 @@ import image31 from "../../assets/svg/31.svg"
 
 function Similar() {
     return (
-        <div className='Similar'>
+        <div className='Similar container'>
             <h1>Similar Items</h1> <br />
             <div className='tender-1'>
                 <div className='tender'>

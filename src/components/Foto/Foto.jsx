@@ -6,37 +6,31 @@ import image22 from "../../assets/svg/22.svg"
 import image23 from "../../assets/svg/23.svg"
 import image24 from "../../assets/svg/24.svg"
 
-
-
-
 function Foto() {
     return (
-        <>
-
-            <div className='gridimage'>
-                <div className='image2'>
-                    <img src={image20} alt="" />
-
+        <section className='instagram__ container'>
+            <div className='instagram__grid'>
+                
+                <div className='instagram__large'>
+                    <img src={image20} alt="Instagram post" />
                 </div>
-                <div className='image1'>
-                    <img className='Foto' src={image21} alt="" />
-
+                
+                <div className='instagram__small-grid'>
+                    <div className='instagram__small'>
+                        <img src={image21} alt="Instagram post" />
+                    </div>
+                    <div className='instagram__small'>
+                        <img src={image22} alt="Instagram post" />
+                    </div>
+                    <div className='instagram__small'>
+                        <img src={image23} alt="Instagram post" />
+                    </div>
+                    <div className='instagram__small'>
+                        <img src={image24} alt="Instagram post" />
+                    </div>
                 </div>
-                <div className='image1'>
-                    <img className='Foto' src={image22} alt="" />
-
-                </div>
-                <div className='image1'>
-                    <img className='Foto' src={image23} alt="" />
-
-                </div>
-                <div className='image1'>
-                    <img className='Foto' src={image24} alt="" />
-
-                </div>
-            </div>  <br /> <br /><br />
-
-        </>
+            </div>
+        </section>
     )
 }
 

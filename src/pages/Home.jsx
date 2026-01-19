@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/Home.css";
-import Image6 from "../assets/svg/06.svg";
-
+import "../styles/home.css";
 import Banner from "../components/Banner/Banner";
 import Delivery from "../components/Delivery/Delivery";
 import Card from "../components/Card/Card";
@@ -13,25 +11,40 @@ import Foto from "../components/Foto/Foto";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="Home">
-        <h1>
-          TODAY ONLY! Special offer for Mother’s Day — 20% OFF
-        </h1>
-        <img className="image" src={Image6} alt="Mother’s Day Offer" />
-      </div>
+    <main className="home__">
+      
+      <section className="home__promo container">
+        <div className="home__promo-content">
+          <h1 className="home__promo-title">
+            TODAY ONLY! Special offer for Mother's Day — 20% OFF
+          </h1>
+        </div>
+      </section>
 
-      <div className="item"></div>
-
+   
       <Banner />
+
+      
       <Delivery />
+
+     
       <Card />
+
+      
       <Information />
+
+     
       <Aboutus />
+
+      
       <Info />
-      <Follow />
-      <Foto />
-    </div>
+
+      
+      <section className="instagram-section container">
+        <Follow />
+        <Foto />
+      </section>
+    </main>
   );
 }
 

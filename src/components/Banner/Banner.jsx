@@ -1,51 +1,77 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
+import React, { useState, useEffect } from 'react'
 import image7 from "../../assets/svg/07.svg"
 import image9 from "../../assets/svg/09.svg"
 import image10 from "../../assets/svg/10.svg"
 import "./Banner.css"
 
+const slides = [
+  {
+    image: image7,
+    title: "gourmet gifts",
+    subtitle: "for any occasion",
+    type: "h3"
+  },
+  {
+    image: image9,
+    title: "Chocolate Strawberries Boxes",
+    subtitle: "Freshly Made Every Morning",
+    type: "p"
+  },
+  {
+    image: image10,
+    title: "Roses & Chocolate",
+    subtitle: "Strawberries Arrangements",
+    description: "Handcrafted&Fresh Edible Bouquets",
+    type: "h3"
+  }
+];
+
 function Banner() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <div className='banner'>
-            <Carousel>
-                <Carousel.Item>
-                    <img src={image7} alt="" />
-                    <Carousel.Caption>
-                        <div className='Cation'>
-                            <h1 className='for'>gourmet gifts</h1>
-                            <h3 className='far'>for any occasion </h3>
-                            <button className='button-cation'>SHOP</button>
+            <div className='banner-slides'>
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`banner-slide ${index === currentSlide ? 'active' : ''}`}
+                    >
+                        <img src={slide.image} alt={slide.title} />
+                        <div className='banner-caption'>
+                            <div className='caption-content'>
+                                <h1 className='caption-title'>{slide.title}</h1>
+                                {slide.type === 'h3' ? (
+                                    <h3 className='caption-subtitle'>{slide.subtitle}</h3>
+                                ) : (
+                                    <p className='caption-subtitle'>{slide.subtitle}</p>
+                                )}
+                                {slide.description && (
+                                    <p className='caption-description'>{slide.description}</p>
+                                )}
+                                <button className='btn btn-primary caption-button'>SHOP</button>
+                            </div>
                         </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img src={image9} alt="" />
-                    <Carousel.Caption>
-                        <div className="Cation">
-                            <h1 className='for'>Chocolate Strawberries Boxes</h1>
-                            <p className='far'>Freshly Made Every Morning</p>
-                            <button className='button-cation'>SHOP</button>
-
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img src={image10} alt="" />
-                    <div></div>
-                    <Carousel.Caption>
-                        <div className='Cation'>
-                            <h1 className='for'>Roses & Chocolate</h1>
-                            <h3 className='far'>Strawberries Arrangements</h3>
-                            <p>
-                                Handcrafted&Fresh Edible Bouquets
-                            </p>
-                            <button className='button-cation'>SHOP</button>
-
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                    </div>
+                ))}
+            </div>
+            <div className='banner-indicators'>
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`banner-indicator ${index === currentSlide ? 'active' : ''}`}
+                        onClick={() => setCurrentSlide(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

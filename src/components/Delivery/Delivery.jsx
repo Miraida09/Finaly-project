@@ -8,7 +8,7 @@ import { LuChefHat } from "react-icons/lu";
 
 function Delivery() {
     return (
-        <div className='delivery'>
+        <div className='delivery container'>
 
             <div className='box-1'>
                 <PiTruck className='car-icons' />

@@ -11,13 +11,13 @@ function Size() {
     const [count, setCount] = useState(1);
 
     return (
-        <div className='Size'>
-            <div className='Lorem'>
-                <h1>TRUE LOVE</h1>
-                <span>$ 115,00</span>
-                <p>
+        <div className='product-info-content'>
+            <div className='product-title-section'>
+                <h1 className='product-title'>TRUE LOVE</h1>
+                <span className='product-price'>$ 115,00</span>
+                <p className='product-description'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <span> SHOW MORE</span>
+                    <span className='show-more-link'> SHOW MORE</span>
                 </p>
             </div>
 

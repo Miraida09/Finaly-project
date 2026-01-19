@@ -2,39 +2,23 @@ import React from 'react'
 import Image8 from "../../assets/svg/08.svg"
 import "./Flower.css"
 
+function Flower({ onSelectImage, selectedImage }) {
+    const thumbnails = [Image8, Image8, Image8, Image8];
+    const defaultImage = Image8;
+    const currentImage = selectedImage || defaultImage;
 
-function Flower() {
     return (
-        <div className='Flower'>
-            <div className='flower'>
-
-                <div>
-                    <img src={Image8} alt="" /> <br />
-                </div>
-                <div>
-                    <img src={Image8} alt="" /> <br />
-
-                </div>
-                <div>
-                    <img src={Image8} alt="" />
-
-                </div>
-                <div>
-                    <img src={Image8} alt="" />
-
-
-
-                </div>
-            </div>
-            <div className='shoop-img'>
-                <img className='shoop-img' src={Image8} alt="" />
-
-            </div>
-        
-
-
-
-
+        <div className='product-thumbnails-list'>
+            {thumbnails.map((thumb, index) => (
+                <button
+                    key={index}
+                    className={`thumbnail-item ${currentImage === thumb ? 'active' : ''}`}
+                    onClick={() => onSelectImage && onSelectImage(thumb)}
+                    aria-label={`View image ${index + 1}`}
+                >
+                    <img src={thumb} alt={`Thumbnail ${index + 1}`} />
+                </button>
+            ))}
         </div>
     )
 }

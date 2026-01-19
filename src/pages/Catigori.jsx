@@ -3,7 +3,7 @@ import "../styles/Category.css"
 
 function Category() {
     return (
-       <section>
+       <section className='container'>
         <h4>Category</h4>
 
         <p>Rose</p>

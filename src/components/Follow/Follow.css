@@ -1,41 +1,89 @@
-.Follow {
-    width: 2000px;
+
+.instagram-follow__ {
+    width: 100%;
+    padding: var(--s12) 0;
+    text-align: center;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.instagram-follow__title {
+    color: var(--color-text);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: var(--s4);
+}
+
+.instagram-follow__subtitle {
+    color: var(--color-text-muted);
+    font-size: var(--fs-md);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+    text-align: center;
+    margin-bottom: var(--s6);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram-follow__handle {
+    color: var(--color-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+    text-align: center;
+    margin: 0;
+}
+
+
+.Follow {
+    width: 100%;
+    padding: var(--s12) 0;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .Follow h1 {
-    color: rgba(0, 0, 0, 1);
-
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 42px;
-    letter-spacing: 0%;
+    color: var(--color-text);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+    letter-spacing: 0;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: var(--s4);
 }
 
 .Follow p {
-    color: rgba(130, 130, 130, 1);
-
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
+    color: var(--color-text-muted);
+    font-size: var(--fs-md);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
     text-align: center;
+    margin-bottom: var(--s6);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Follow h2 {
-    color: rgba(0, 0, 0, 1);
-
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0%;
+    color: var(--color-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
     text-align: center;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .instagram-follow__,
+    .Follow {
+        padding: var(--s8) 0;
+    }
 }

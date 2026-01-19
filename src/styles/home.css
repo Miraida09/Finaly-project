@@ -1,0 +1,46 @@
+
+
+.home__ {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.home__promo {
+    padding: var(--s4) 0;
+    background-color: var(--promo-purple);
+    margin-top: var(--s4);
+}
+
+.home__promo-content {
+    text-align: center;
+}
+
+.home__promo-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+    margin: 0;
+    padding: var(--s2) 0;
+}
+
+.instagram-section {
+    padding: var(--s12) 0;
+}
+
+@media (max-width: 768px) {
+    .home__promo {
+        padding: var(--s3) 0;
+        margin-top: var(--s2);
+    }
+    
+    .home__promo-title {
+        font-size: clamp(0.875rem, 4vw, 1.125rem);
+    }
+    
+    .instagram-section {
+        padding: var(--s8) 0;
+    }
+}
+

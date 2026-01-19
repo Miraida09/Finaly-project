@@ -1,56 +1,79 @@
 .Similar {
-    width:2000px;
-    height: 585px;
-    margin: 0 auto;
+    width: 100%;
+    padding: var(--space-12) 0;
+    margin: var(--space-8) auto;
+    overflow-x: hidden;
 }
 
 .Similar h1 {
-    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
-
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 35px;
-    letter-spacing: 0%;
+    color: var(--color-text);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+    letter-spacing: 0;
     text-align: left;
     text-transform: uppercase;
-}
-
-.tender {
-    width: 344px;
-    height: 420px;
-}
-
-.tender h1 {
-    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
-
-    font-family: Inter;
-    font-style: Regular;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.tender h2 {
-    color: rgba(130, 130, 130, 1);
-
-    font-family: Inter;
-    font-style: Medium;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-transform: capitalize;
+    margin-bottom: var(--space-8);
 }
 
 .tender-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    justify-items: center;
+}
+
+.tender {
+    width: 100%;
+    max-width: 344px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    flex-direction: column;
+    gap: var(--space-4);
+    transition: transform var(--transition-base);
+}
+
+.tender:hover {
+    transform: translateY(-4px);
+}
+
+.tender img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.tender h1 {
+    color: var(--color-text);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tender h2 {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .Similar {
+        padding: var(--space-8) var(--space-4);
+    }
+    
+    .tender-1 {
+        grid-template-columns: 1fr;
+    }
 }
