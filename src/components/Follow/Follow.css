@@ -1,0 +1,41 @@
+.Follow {
+    width: 2000px;
+    margin: 0 auto;
+}
+
+.Follow h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Follow p {
+    color: rgba(130, 130, 130, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.Follow h2 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+}

@@ -1,0 +1,241 @@
+.Size {
+    width: 2000px;
+    height: 800px;
+    margin-left: 1400px;
+    margin-top: -850px;
+}
+
+.Lorem p {
+    color: rgba(112, 112, 112, 1);
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.Size-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: -400px;
+}
+
+.Size-s h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Semi Bold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.Total {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Semi Bold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.size-button {
+    width: 80px;
+    height: 40px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #000;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.size-button:hover {
+    color: rgba(128, 35, 58, 1);
+    border-color: rgba(128, 35, 58, 1);
+}
+
+.size-button:active {
+    color: rgba(128, 35, 58, 1);
+    border-color: rgba(128, 35, 58, 1);
+}
+
+
+.cart {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.total {
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.count {
+    font-size: 25px;
+    width: 30px;
+}
+
+.add {
+    padding: 10px 15px;
+    border: none;
+    background: rgba(128, 35, 58, 1);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background: #7d1b1b;
+}
+
+
+.CHECK h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Semi Bold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.CHECK button {
+    width: 170px;
+    height: 43px;
+    background: rgba(244, 242, 242, 1);
+    border: none;
+    margin-left: 5px;
+}
+
+.CHECK input {
+    width: 265px;
+    height: 43px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Small h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Semi Bold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.Small h2 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    margin-top: -21px;
+}
+
+.pink {
+    width: 444px;
+    height: 0;
+    border: 1px solid rgba(239, 207, 218, 1);
+}
+
+.but {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.but {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cardd {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cardd:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardd img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.cardd h1 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.cardd h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+}

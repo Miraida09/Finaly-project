@@ -1,0 +1,79 @@
+.Information {
+    width: 2000px;
+    height: 617px;
+    background: linear-gradient(180.00deg, rgba(239, 207, 218, 1), rgba(236, 176, 197, 1) 100%);
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.Infoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.title {
+    width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: rgba(128, 35, 58, 1);
+
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.title p {
+    color: rgba(128, 35, 58, 1);
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text {
+    width: 659px;
+    height: 271px;
+    background: rgb(246, 226, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-for {
+    width: 659px;
+    height: 271px;
+    background: rgb(249, 244, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h3 {
+    color: rgba(0, 0, 0, 1);
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+}
+
+.text p {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+}

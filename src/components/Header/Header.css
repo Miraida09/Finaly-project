@@ -1,0 +1,92 @@
+.Header {
+    width: 2000px;
+    height: auto;
+    margin: 0 auto;
+    position: static;
+}
+
+.Header span {
+    width: 913px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(106, 106, 106, 1);
+
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.middle-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 108px;
+    height: 113px;
+    left: 600px;
+    top: 2px;
+
+}
+
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    left: 300px;
+    top: -20px;
+    color: darkred;
+    font-size: 30px;
+    width: auto !important;
+    margin: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.box {
+    width: 235px;
+    height: 34px;
+    margin: 0 auto;
+}
+
+.box input {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0.1px;
+}
+
+.Fiserch {
+    position: absolute;
+    left: 160px;
+    top: 5px;
+}
+
+.title-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.shop {
+    color: rgb(0, 0, 0);
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}

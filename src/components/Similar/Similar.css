@@ -1,0 +1,56 @@
+.Similar {
+    width:2000px;
+    height: 585px;
+    margin: 0 auto;
+}
+
+.Similar h1 {
+    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.tender {
+    width: 344px;
+    height: 420px;
+}
+
+.tender h1 {
+    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.tender h2 {
+    color: rgba(130, 130, 130, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.tender-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}

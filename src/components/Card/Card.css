@@ -1,0 +1,153 @@
+.Card {
+    width: 2000px;
+    margin: 0 auto;
+}
+
+.Text {
+    width: 335px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 113px;
+
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-1 {
+    width: 549px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 16px;
+
+
+    color: rgba(130, 130, 130, 1);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.btns {
+    width: 188px;
+    height: 52px;
+    color: rgba(130, 130, 130, 1);
+    background-color: rgba(245, 245, 245, 1);
+    border: none;
+}
+
+.card-title {
+    width: 255px;
+    height: 336px;
+}
+
+.image-title {
+    width: 250px;
+    height: 263px;
+    position: relative;
+}
+
+.card-title h1 {
+    width: 200px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-title p {
+    width: 104px;
+    height: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: rgba(130, 130, 130, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.icon {}
+
+.icon-bag {
+    color: rgba(128, 35, 58, 1);
+}
+
+.card-mein {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    margin: 0 auto;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+
+}
+
+.button-s {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.Btns {
+    width: 183px;
+    height: 44.88px;
+    border: 2px solid rgba(128, 35, 58, 1);
+    background-color: white;
+
+    color: rgba(128, 35, 58, 1);
+
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 400px;
+    margin-top: 30px;
+}

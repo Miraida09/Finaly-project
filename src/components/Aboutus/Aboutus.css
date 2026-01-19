@@ -1,0 +1,59 @@
+.Aboutuscz {
+    width: 2000px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.image-picture-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: -130px;
+}
+
+.image-picture-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -150px;
+    margin-left: 650px;
+}
+
+.image-picture-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.text-us {
+    margin-left: 1000px;
+    margin-top: -570px;
+}
+
+.text-us h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.text-us p {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Light;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}

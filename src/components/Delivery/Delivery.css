@@ -1,0 +1,47 @@
+.delivery {
+    width: 2000px;
+    height: 211px;
+    background-color: pink;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.car-icons {
+    font-size: 58px;
+    color: rgba(128, 35, 58, 1);
+    margin-left: 55px;
+}
+
+.car-icons-2 {
+    font-size: 58px;
+    color: rgba(128, 35, 58, 1);
+    margin-left: 95px;
+}
+
+.car-icons-3 {
+    font-size: 58px;
+    color: rgba(128, 35, 58, 1);
+    margin-left: 42px;
+}
+
+.car-icons-4 {
+    font-size: 58px;
+    color: rgba(128, 35, 58, 1);
+    margin-left: 46px;
+}
+
+.delivery-text {
+    color: rgba(128, 35, 58, 1);
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 22px;
+
+}

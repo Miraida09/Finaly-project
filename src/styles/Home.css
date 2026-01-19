@@ -1,0 +1,28 @@
+.Home {
+    width: 100%;
+    height: 56px;
+    background-color: darkorchid;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.Home h1 {
+    position: absolute;
+    text-align: center;
+    left: 800px;
+    color: rgba(255, 255, 255, 1);
+
+    font-family: Inter;
+    font-size: 40px;
+}
+
+.image {
+    position: absolute;
+    left: 750px;
+}
+
+.item {
+    width: 2065px;
+    margin: 0 auto;
+    margin-left: 200px;
+} 
