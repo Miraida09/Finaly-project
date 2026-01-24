@@ -7,7 +7,7 @@ import image14 from "../../assets/svg/14.svg"
 import { IoBag } from "react-icons/io5";
 
 function Card() {
-  
+
     const products = [
         { img: image11, title: "HUGS & KISSES", price: "$ 79.00-149.00" },
         { img: image12, title: "STRAWBERRY BLISS", price: "$ 139.00-269.00" },

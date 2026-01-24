@@ -5,54 +5,56 @@ import logo from "../../assets/svg/01.svg";
 import { FiSearch } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import { FaRegHeart, FaBars, FaTimes } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const drawerRef = useRef(null);
     const firstLinkRef = useRef(null);
 
-   
+
     useEffect(() => {
         if (menuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
         }
-        
+
         return () => {
             document.body.style.overflow = '';
         };
     }, [menuOpen]);
 
-    
+
     useEffect(() => {
         const handleEsc = (e) => {
             if (e.key === 'Escape' && menuOpen) {
                 setMenuOpen(false);
             }
         };
-        
+
         if (menuOpen) {
             document.addEventListener('keydown', handleEsc);
-           
+
             setTimeout(() => {
                 if (firstLinkRef.current) {
                     firstLinkRef.current.focus();
                 }
             }, 100);
         }
-        
+
         return () => {
             document.removeEventListener('keydown', handleEsc);
         };
     }, [menuOpen]);
 
-   
+
     const handleNavClick = () => {
         setMenuOpen(false);
     };
 
-    
+
     const handleOverlayClick = (e) => {
         if (e.target === e.currentTarget) {
             setMenuOpen(false);
@@ -61,17 +63,16 @@ function Header() {
 
     const navLinks = [
         { to: "/", label: "SHOP ALL" },
-        { to: "/catigori", label: "BY OCCASION" },
         { to: "/catigori", label: "BY CATEGORY" },
-        { to: "/catigori", label: "BY PRICE" },
-        { to: "/catigori", label: "SPECIAL" },
-        { to: "/about", label: "FAQ" },
+        { to: "/about", label: "ABOUT" },
         { to: "/contact", label: "CONTACTS" },
+        { to: "/review", label: " REVIEW" },
+
     ];
 
     return (
         <header className='header__'>
-            
+
             <div className='header__announcement'>
                 <div className='container'>
                     <span className='header__announcement-text'>
@@ -80,35 +81,42 @@ function Header() {
                 </div>
             </div>
 
-            
+
             <div className='header__main'>
                 <div className='container'>
                     <div className='header__content'>
-                       
+
                         <div className='header__logo'>
                             <img src={logo} alt="Logo" />
                         </div>
 
-                       
+
                         <div className='header__search'>
-                            <input 
-                                type="text" 
-                                placeholder='Search...' 
+                            <input
+                                type="text"
+                                placeholder='Search...'
                                 className='header__search-input'
                             />
                             <FiSearch className='header__search-icon' />
                         </div>
 
-                        
+
                         <div className='header__icons'>
-                            <button className='header__icon-btn' aria-label="Wishlist">
-                                <FaRegHeart />
-                            </button>
-                            <button className='header__icon-btn' aria-label="Cart">
-                                <IoBagOutline />
-                            </button>
-                            
-                            <button 
+                            <div className='header__icon-btn' aria-label="Wishlist">
+                                <Link to="/like" >  <FaRegHeart /> </Link>
+
+
+
+                            </div>
+                            <div className=''>
+                                <Link to="res"> <CgProfile /> </Link>
+
+                            </div>
+                            <div className='header__icon-btn' aria-label="Cart">
+                                <Link to="card"><IoBagOutline /> </Link>
+                            </div>
+
+                            <button
                                 className='header__hamburger'
                                 onClick={() => setMenuOpen(!menuOpen)}
                                 aria-label="Toggle menu"
@@ -122,14 +130,14 @@ function Header() {
                 </div>
             </div>
 
-            
+
             <nav className='header__nav'>
                 <div className='container'>
                     <div className='header__nav-links'>
                         {navLinks.map((link, index) => (
-                            <Link 
+                            <Link
                                 key={index}
-                                to={link.to} 
+                                to={link.to}
                                 className='header__nav-link'
                             >
                                 {link.label}
@@ -139,17 +147,17 @@ function Header() {
                 </div>
             </nav>
 
-            
+
             {menuOpen && (
-                <div 
+                <div
                     className='mnav__overlay'
                     onClick={handleOverlayClick}
                     aria-hidden="true"
                 />
             )}
 
-           
-            <nav 
+
+            <nav
                 id="mobileNav"
                 ref={drawerRef}
                 className={`mnav__drawer ${menuOpen ? 'mnav__drawer--open' : ''}`}
@@ -157,7 +165,7 @@ function Header() {
             >
                 <div className='mnav__drawer-header'>
                     <h2 className='mnav__drawer-title'>Menu</h2>
-                    <button 
+                    <button
                         className='mnav__drawer-close'
                         onClick={() => setMenuOpen(false)}
                         aria-label="Close menu"
@@ -167,10 +175,10 @@ function Header() {
                 </div>
                 <div className='mnav__drawer-links'>
                     {navLinks.map((link, index) => (
-                        <Link 
+                        <Link
                             key={index}
                             ref={index === 0 ? firstLinkRef : null}
-                            to={link.to} 
+                            to={link.to}
                             className='mnav__drawer-link'
                             onClick={handleNavClick}
                         >

@@ -1,0 +1,24 @@
+.Last {
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+.mail {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: 40px;
+    gap: 40px;
+
+}
+
+.Last button {
+    width: 199.35px;
+    height: 42px;
+    background-color: rgba(128, 35, 58, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+
+}

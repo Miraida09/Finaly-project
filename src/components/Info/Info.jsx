@@ -13,9 +13,9 @@ function Info() {
                     Subscribe discount newsletter for get notification about new information discount, etc.
                 </p>
                 <form className='discount__form'>
-                    <input 
-                        type="email" 
-                        placeholder='Enter your email' 
+                    <input
+                        type="email"
+                        placeholder='Enter your email'
                         className='discount__input'
                         required
                     />

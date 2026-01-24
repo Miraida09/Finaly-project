@@ -3,7 +3,7 @@ import "./Information.css";
 
 function Information() {
     return (
-        <section className='testimonials__ container'>
+        <section className='testimonials__ container'> 
             <div className='testimonials__header'>
                 <h1 className='testimonials__title'>OUR HAPPY CLIENTS</h1>
                 <p className='testimonials__subtitle'>What they say about us</p>
@@ -27,8 +27,8 @@ function Information() {
                         Anna I just want to say a huge thank you for making my sister feel special. Your arrangement was simply stunning and the perfect gift for this occasion. You did an amazing job. I will certainly keep your details to use in the future. My daughter is having her first baby (boy) in a few months time so that might be my next occasion! Thanking you, Clare
                     </p>
                 </div>
-            </div>
-        </section>
+            </div> <br /><br />
+        </section> 
     );
 }
 

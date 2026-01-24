@@ -26,9 +26,9 @@ function Lorem() {
                     <div className='tab-panel'>
                         <h2>Description</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, 
-                            augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit 
-                            ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                            augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit
+                            ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
                             Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
                         </p>
                     </div>
@@ -38,9 +38,9 @@ function Lorem() {
                     <div className='tab-panel'>
                         <h2>Additional Information</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, 
-                            augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit 
-                            ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                            augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit
+                            ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
                             Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
                         </p>
                     </div>

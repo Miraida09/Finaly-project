@@ -1,0 +1,81 @@
+.interactive-review {
+    padding: 100px 60px;
+    background-color: rgba(128, 35, 58, 1);
+    text-align: center;
+}
+
+.interactive-review h2 {
+    font-size: 38px;
+    color: #4a2c2a;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.input-box input {
+    padding: 12px 18px;
+    width: 320px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.input-box button {
+    padding: 12px 25px;
+    border: none;
+    background: #f7a1b5;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.input-box button:hover {
+    background: #e889a0;
+}
+
+.review-display {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    animation: fadeIn 0.7s ease;
+}
+
+.review-display h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a2c2a;
+    margin-bottom: 10px;
+}
+
+.review-display p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

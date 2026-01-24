@@ -17,10 +17,10 @@ function Contact() {
     const [count, setCount] = useState(1);
     const [activeTab, setActiveTab] = useState('description');
     const price = 115;
-    
+
     const thumbnails = [Image8, Image8, Image8, Image8];
     const currentImageIndex = thumbnails.findIndex(img => img === selectedImage);
-    
+
     const extraGifts = [
         { img: image25, name: "Candle", price: "$ 50,00" },
         { img: image26, name: "Bath Bomb", price: "$ 70,00" },
@@ -47,9 +47,9 @@ function Contact() {
     return (
         <div className="container">
             <section className="pd">
-               
+
                 <div className="pd__top">
-                  
+
                     <aside className="pd__thumbs">
                         {thumbnails.map((thumb, index) => (
                             <button
@@ -63,11 +63,11 @@ function Contact() {
                         ))}
                     </aside>
 
-                    
+
                     <div className="pd__media">
                         <img src={selectedImage} alt="Product" className="pd__img" />
                         <div className="pd__mediaNav">
-                            <button 
+                            <button
                                 className="pd__mediaNav__arrow pd__mediaNav__arrow--prev"
                                 onClick={handlePrevImage}
                                 aria-label="Previous image"
@@ -84,7 +84,7 @@ function Contact() {
                                     />
                                 ))}
                             </div>
-                            <button 
+                            <button
                                 className="pd__mediaNav__arrow pd__mediaNav__arrow--next"
                                 onClick={handleNextImage}
                                 aria-label="Next image"
@@ -94,7 +94,7 @@ function Contact() {
                         </div>
                     </div>
 
-                    
+
                     <aside className="pd__info">
                         <h1 className="pd__info__title">TRUE LOVE</h1>
                         <div className="pd__info__price">$ 115,00</div>
@@ -105,19 +105,19 @@ function Contact() {
 
                         <div className="pd__sizeRow">
                             <span className="pd__sizeRow__label">Size:</span>
-                            <button 
+                            <button
                                 className={`pd__sizeBtn ${selectedSize === 'S' ? 'pd__sizeBtn--active' : ''}`}
                                 onClick={() => setSelectedSize('S')}
                             >
                                 S
                             </button>
-                            <button 
+                            <button
                                 className={`pd__sizeBtn ${selectedSize === 'M' ? 'pd__sizeBtn--active' : ''}`}
                                 onClick={() => setSelectedSize('M')}
                             >
                                 M
                             </button>
-                            <button 
+                            <button
                                 className={`pd__sizeBtn ${selectedSize === 'L' ? 'pd__sizeBtn--active' : ''}`}
                                 onClick={() => setSelectedSize('L')}
                             >
@@ -129,7 +129,7 @@ function Contact() {
                             <div className="pd__qtyBox">
                                 <div className="pd__qtyBox__total">Total $ {(price * count).toFixed(2)}</div>
                                 <div className="pd__qtyBox__controls">
-                                    <button 
+                                    <button
                                         className="pd__qtyBtn"
                                         onClick={() => setCount(count > 1 ? count - 1 : 1)}
                                         aria-label="Decrease quantity"
@@ -137,7 +137,7 @@ function Contact() {
                                         -
                                     </button>
                                     <span className="pd__qtyVal">{count}</span>
-                                    <button 
+                                    <button
                                         className="pd__qtyBtn"
                                         onClick={() => setCount(count + 1)}
                                         aria-label="Increase quantity"
@@ -152,9 +152,9 @@ function Contact() {
                         <div className="pd__zipRow">
                             <label className="pd__zipRow__label">Check availability at:</label>
                             <div className="pd__zipRow__inputGroup">
-                                <input 
-                                    type="text" 
-                                    placeholder="Enter zipcode..." 
+                                <input
+                                    type="text"
+                                    placeholder="Enter zipcode..."
                                     className="pd__zipRow__input"
                                 />
                                 <button className="pd__zipRow__btn">CHECK YOUR ZIPCODE</button>
@@ -178,7 +178,7 @@ function Contact() {
                     </aside>
                 </div>
 
-                
+
                 <div className="pd__bottom">
                     <div className="pd__tabsCol">
                         <div className="pd__tabs">
@@ -198,17 +198,17 @@ function Contact() {
                         <div className="pd__tabPanel">
                             {activeTab === 'description' && (
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, 
-                                    augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit 
-                                    ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                                    augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit
+                                    ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
                                     Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
                                 </p>
                             )}
                             {activeTab === 'additional' && (
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, 
-                                    augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit 
-                                    ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                                    augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit
+                                    ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
                                     Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
                                 </p>
                             )}
@@ -216,7 +216,7 @@ function Contact() {
                     </div>
                 </div>
 
-                
+
                 <section className="pd__similar">
                     <h2 className="pd__similar__title">SIMILAR ITEMS</h2>
                     <div className="pd__similarGrid">

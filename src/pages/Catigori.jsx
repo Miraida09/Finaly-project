@@ -1,19 +1,13 @@
 import React from 'react'
 import "../styles/Category.css"
+import Categori from '../components/Categori/Categori'
 
 function Category() {
     return (
-       <section className='container'>
-        <h4>Category</h4>
+        <section className='container'>
+            <Categori />
 
-        <p>Rose</p>
-        <p>Chocolate-covered strawberries</p>
-        <p>Tulip</p>
-        <p>Lily</p>
-        <p>Peony</p>
-        <p>Violet</p>
-        <p>Chamomlie</p>
-       </section>
+        </section>
     )
 }
 

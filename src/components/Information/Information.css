@@ -6,6 +6,7 @@
     padding: var(--s12) 0;
     margin-top: var(--s12);
     overflow-x: hidden;
+    margin-top: 20px;
 }
 
 .testimonials__header {

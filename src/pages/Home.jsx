@@ -12,7 +12,7 @@ import Foto from "../components/Foto/Foto";
 function Home() {
   return (
     <main className="home__">
-      
+
       <section className="home__promo container">
         <div className="home__promo-content">
           <h1 className="home__promo-title">
@@ -21,25 +21,25 @@ function Home() {
         </div>
       </section>
 
-   
+
       <Banner />
 
-      
+
       <Delivery />
 
-     
+
       <Card />
 
-      
+
       <Information />
 
-     
+
       <Aboutus />
 
-      
+
       <Info />
 
-      
+
       <section className="instagram-section container">
         <Follow />
         <Foto />

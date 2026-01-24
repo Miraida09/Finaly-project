@@ -91,13 +91,15 @@
 
 .header__search-icon {
     position: absolute;
-    left: var(--s3);
+    /* left: var(--s3); */
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     color: var(--color-text-muted);
     font-size: var(--fs-lg);
     pointer-events: none;
     z-index: 1;
+
 }
 
 

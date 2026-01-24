@@ -1,0 +1,92 @@
+.Secori {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.Secori h1 {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Secori p {
+    color: rgba(130, 130, 130, 1);
+
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.Secori-text {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.Secori-text h1 {
+    color: rgba(128, 35, 58, 1);
+    /* border: 2px solid rgba(128, 35, 58, 1); */
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Secori-text h2 {
+    color: var(--Light Colors/Dark gray - Light, rgba(112, 112, 112, 1));
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.secori-icon {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.secori-icon h1 {
+    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+.icons {
+    color: rgba(114, 64, 138, 1);
+}
+
+.icons-1 {
+    display: flex;
+    gap: 5px;
+}

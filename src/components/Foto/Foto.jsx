@@ -10,11 +10,11 @@ function Foto() {
     return (
         <section className='instagram__ container'>
             <div className='instagram__grid'>
-                
+
                 <div className='instagram__large'>
                     <img src={image20} alt="Instagram post" />
                 </div>
-                
+
                 <div className='instagram__small-grid'>
                     <div className='instagram__small'>
                         <img src={image21} alt="Instagram post" />

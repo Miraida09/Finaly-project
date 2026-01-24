@@ -1,0 +1,87 @@
+.Gul {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.Gul-card {
+    width: 218px;
+    height: 300px;
+    margin-top: 50px;
+
+}
+
+.Gul-card img {
+    width: 218px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.pr-card {
+    width: 40px;
+    height: 22px;
+    color: aliceblue;
+    background-color: rgba(128, 35, 58, 1);
+    border-radius: 5px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+}
+
+.pr-card p {
+    margin-left: 5px;
+}
+
+.heart {
+    position: relative;
+    top: -210px;
+    left: 180px;
+    font-size: 26px;
+    color: rgba(128, 35, 58, 1);
+
+}
+
+.card-zx {
+    margin-top: -50px;
+}
+
+.card-zx h1 {
+    color: var(--Light Colors/Black - Light, rgba(0, 0, 0, 1));
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.card-zx p {
+    color: rgba(128, 35, 58, 1);
+
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+
+.card-zx button {
+    width: 150px;
+    height: 30px;
+    border: 2x solid rgba(128, 35, 58, 1);
+    background-color: rgba(128, 35, 58, 1);
+    color: white;
+    margin-top: -50px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+}

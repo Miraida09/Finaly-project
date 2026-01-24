@@ -5,25 +5,25 @@ import image10 from "../../assets/svg/10.svg"
 import "./Banner.css"
 
 const slides = [
-  {
-    image: image7,
-    title: "gourmet gifts",
-    subtitle: "for any occasion",
-    type: "h3"
-  },
-  {
-    image: image9,
-    title: "Chocolate Strawberries Boxes",
-    subtitle: "Freshly Made Every Morning",
-    type: "p"
-  },
-  {
-    image: image10,
-    title: "Roses & Chocolate",
-    subtitle: "Strawberries Arrangements",
-    description: "Handcrafted&Fresh Edible Bouquets",
-    type: "h3"
-  }
+    {
+        image: image7,
+        title: "gourmet gifts",
+        subtitle: "for any occasion",
+        type: "h3"
+    },
+    {
+        image: image9,
+        title: "Chocolate Strawberries Boxes",
+        subtitle: "Freshly Made Every Morning",
+        type: "p"
+    },
+    {
+        image: image10,
+        title: "Roses & Chocolate",
+        subtitle: "Strawberries Arrangements",
+        description: "Handcrafted&Fresh Edible Bouquets",
+        type: "h3"
+    }
 ];
 
 function Banner() {
@@ -71,8 +71,8 @@ function Banner() {
                         aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
-            </div>
-        </div>
+            </div> 
+        </div> 
     )
 }
 
