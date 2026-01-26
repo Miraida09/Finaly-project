@@ -6,7 +6,6 @@ function Category() {
     return (
         <section className='container'>
             <Categori />
-
         </section>
     )
 }

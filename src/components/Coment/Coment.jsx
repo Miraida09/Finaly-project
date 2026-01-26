@@ -13,9 +13,8 @@ function Coment() {
 
     return (
         <section className="interactive-review">
-            <h2>Share Your Experience</h2>
+            <h2>Your Feedback Matters</h2>
             <p className="subtitle">
-                Write your review and see it appear below!
             </p>
 
             <div className="input-box">

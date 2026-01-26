@@ -14,7 +14,6 @@ function Footer() {
         <footer className="Footer">
             <div className="container">
 
-                {/* SERVICES */}
                 <div className="footer-col">
                     <h2>SERVICES</h2>
                     <ul>
