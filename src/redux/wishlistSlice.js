@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// Load from localStorage
+
 const loadWishlistFromStorage = () => {
   try {
     const stored = localStorage.getItem('wishlist_ids');
@@ -11,7 +11,7 @@ const loadWishlistFromStorage = () => {
   }
 };
 
-// Save to localStorage
+
 const saveWishlistToStorage = (ids) => {
   try {
     localStorage.setItem('wishlist_ids', JSON.stringify(ids));

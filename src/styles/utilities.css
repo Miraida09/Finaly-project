@@ -74,7 +74,6 @@
 .gap-6 { gap: var(--space-6); }
 .gap-8 { gap: var(--space-8); }
 
-/* Grid */
 .grid {
   display: grid;
 }

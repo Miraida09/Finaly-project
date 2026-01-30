@@ -94,7 +94,6 @@
 
 .header__search-icon {
     position: absolute;
-    /* left: var(--s3); */
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
