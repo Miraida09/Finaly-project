@@ -260,8 +260,14 @@
   transition: background-color 0.2s ease;
 }
 
-.cart-page__checkout-btn:hover {
+.cart-page__checkout-btn:hover:not(:disabled) {
   background-color: #5a1d2a;
+}
+
+.cart-page__checkout-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .cart-page__free-shipping {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import "./Header.css";
 import "../../styles/badges.css";
 import { Link } from 'react-router-dom';
@@ -8,17 +9,38 @@ import { FiSearch } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import { FaRegHeart, FaBars, FaTimes } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { logout } from '../../redux/authSlice';
 
 
 function Header() {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
     const drawerRef = useRef(null);
     const firstLinkRef = useRef(null);
     
     const wishlistIds = useSelector((state) => state.wishlist?.ids) || [];
     const cartItems = useSelector((state) => state.cart?.items) || [];
+    const user = useSelector((state) => state.auth.user);
     const wishlistCount = Array.isArray(wishlistIds) ? wishlistIds.length : 0;
     const cartCount = Array.isArray(cartItems) ? cartItems.reduce((sum, item) => sum + (Number(item.qty) || 0), 0) : 0;
+
+    const handleAuthClick = () => {
+        if (user) {
+            navigate('/account');
+        } else {
+            navigate('/auth');
+        }
+    };
+
+    const handleLogout = async () => {
+        try {
+            await dispatch(logout()).unwrap();
+            navigate('/');
+        } catch (err) {
+            console.error('Logout error:', err);
+        }
+    };
 
 
     useEffect(() => {
@@ -117,8 +139,25 @@ function Header() {
                                     )}
                                 </Link>
                             </div>
-                            <div className=''>
-                                <Link to="res"> <CgProfile /> </Link>
+                            <div className='header__icon-btn header__auth-wrapper'>
+                                {user ? (
+                                    <button 
+                                        onClick={handleAuthClick}
+                                        className="header__auth-icon-btn"
+                                        aria-label="Account"
+                                    >
+                                        <CgProfile />
+                                        <span className="header__auth-text">Аккаунт</span>
+                                    </button>
+                                ) : (
+                                    <button 
+                                        onClick={handleAuthClick}
+                                        className="header__auth-icon-btn"
+                                        aria-label="Login"
+                                    >
+                                        <CgProfile />
+                                    </button>
+                                )}
                             </div>
                             <div className='header__icon-btn icon-badge' aria-label="Cart">
                                 <Link to="card">

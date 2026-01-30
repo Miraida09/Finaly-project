@@ -124,9 +124,9 @@ const BestSellersApi = () => {
                   <h3 className="bestsellers-api__card-title">{product.title}</h3>
                   <div className="bestsellers-api__price-wrapper">
                     {hasDiscount && (
-                      <p className="bestsellers-api__old-price">${oldPrice.toFixed(2)}</p>
+                      <p className="bestsellers-api__old-price">{oldPrice.toFixed(2)} сом</p>
                     )}
-                    <p className="bestsellers-api__card-price">${finalPrice.toFixed(2)}</p>
+                    <p className="bestsellers-api__card-price">{finalPrice.toFixed(2)} сом</p>
                   </div>
                 </div>
                 <button

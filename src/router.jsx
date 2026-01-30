@@ -5,10 +5,12 @@ import Home from "./pages/Home";
 import Notfound from "./pages/Notfound";
 import Contact from "./pages/Contact";
 import Catigori from "./pages/Catigori";
-import Contacts from "./pages/Contacts";
 import Res from "./pages/Res";
 import Like from "./pages/Like";
 import Card from "./pages/Card";
+import Checkout from "./pages/Checkout";
+import Auth from "./pages/Auth";
+import Account from "./pages/Account";
 import Review from "./pages/Review"
 import Detalis from "./pages/Detalis";
 import Peony from "./pages/Peony";
@@ -19,12 +21,17 @@ import Rose from "./pages/Rose";
 import Chamomlie from "./pages/Chamomlie";
 import Lily from "./pages/Lily";
 import ProductsPage from "./admin/pages/ProductsPage";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 
 const myRouter = createBrowserRouter([
     {
         path: "/admin/products",
-        element: <ProductsPage />
+        element: (
+            <ProtectedRoute>
+                <ProductsPage />
+            </ProtectedRoute>
+        )
     },
     {
         path: "/",
@@ -47,9 +54,6 @@ const myRouter = createBrowserRouter([
             }, {
                 path: "catigori",
                 element: <Catigori />
-            }, {
-                path: "contacts",
-                element: <Contacts />
             },
             {
                 path: "res",
@@ -58,6 +62,22 @@ const myRouter = createBrowserRouter([
             {
                 path: "card",
                 element: <Card />
+            },
+            {
+                path: "checkout",
+                element: <Checkout />
+            },
+            {
+                path: "auth",
+                element: <Auth />
+            },
+            {
+                path: "account",
+                element: (
+                    <ProtectedRoute>
+                        <Account />
+                    </ProtectedRoute>
+                )
             },
             {
                 path: "like",

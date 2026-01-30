@@ -104,9 +104,9 @@ function Like() {
                     <h3 className="wishlist-page__card-title">{product.title}</h3>
                     <div className="wishlist-page__price-wrapper">
                       {hasDiscount && (
-                        <p className="wishlist-page__old-price">${oldPrice.toFixed(2)}</p>
+                        <p className="wishlist-page__old-price">{oldPrice.toFixed(2)} сом</p>
                       )}
-                      <p className="wishlist-page__card-price">${finalPrice.toFixed(2)}</p>
+                      <p className="wishlist-page__card-price">{finalPrice.toFixed(2)} сом</p>
                     </div>
                     <div className="wishlist-page__card-actions">
                       <button

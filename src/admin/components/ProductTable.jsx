@@ -51,10 +51,10 @@ const ProductTable = ({ products, onEdit, onDelete, loading }) => {
                 <span className="product-category">{product.category}</span>
               </td>
               <td>
-                <div className="product-price">${product.price}</div>
+                <div className="product-price">{product.price} сом</div>
               </td>
               <td>
-                <div className="product-discount">${product.discount}</div>
+                <div className="product-discount">{product.discount} сом</div>
               </td>
               <td>
                 <div className="product-actions">
