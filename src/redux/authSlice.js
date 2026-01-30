@@ -7,7 +7,7 @@ import {
 } from 'firebase/auth';
 import { auth } from '../firebase/firebase';
 
-// Async thunks
+
 export const login = createAsyncThunk(
   'auth/login',
   async ({ email, password }, { rejectWithValue }) => {
@@ -68,7 +68,7 @@ const authSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    // Login
+    
     builder
       .addCase(login.pending, (state) => {
         state.loading = true;
@@ -84,7 +84,7 @@ const authSlice = createSlice({
         state.error = action.payload;
       });
 
-    // Register
+    
     builder
       .addCase(register.pending, (state) => {
         state.loading = true;
@@ -100,7 +100,7 @@ const authSlice = createSlice({
         state.error = action.payload;
       });
 
-    // Logout
+
     builder
       .addCase(logout.pending, (state) => {
         state.loading = true;
@@ -120,7 +120,7 @@ const authSlice = createSlice({
 
 export const { setUser, clearError } = authSlice.actions;
 
-// Helper function to initialize auth listener
+
 export const initializeAuth = (dispatch) => {
   return onAuthStateChanged(auth, (user) => {
     if (user) {
