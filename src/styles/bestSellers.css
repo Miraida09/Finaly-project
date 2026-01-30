@@ -1,0 +1,227 @@
+.bestsellers-api {
+  width: 100%;
+  padding: 3rem 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.bestsellers-api__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bestsellers-api__title {
+  color: #1f2937;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.bestsellers-api__subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bestsellers-api__grid {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .bestsellers-api__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bestsellers-api__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.bestsellers-api__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.bestsellers-api__card:hover {
+  transform: translateY(-4px);
+}
+
+.bestsellers-api__image-wrapper {
+  position: relative;
+}
+
+.bestsellers-api__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.bestsellers-api__wishlist-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bestsellers-api__wishlist-btn:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.bestsellers-api__wishlist-icon {
+  color: #7a2d3a;
+  font-size: 1.25rem;
+}
+
+.bestsellers-api__wishlist-icon.filled {
+  color: #dc2626;
+}
+
+.bestsellers-api__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0 0.5rem;
+}
+
+.bestsellers-api__card-text {
+  flex: 1;
+}
+
+.bestsellers-api__card-title {
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+}
+
+.bestsellers-api__price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bestsellers-api__card-price {
+  color: #1f2937;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.bestsellers-api__old-price {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.bestsellers-api__cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #7a2d3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.bestsellers-api__cart-btn:hover {
+  background-color: #5a1d2a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(122, 45, 58, 0.3);
+}
+
+.bestsellers-api__cart-btn:focus-visible {
+  outline: 2px solid #7a2d3a;
+  outline-offset: 2px;
+}
+
+.bestsellers-api__cart-btn.added {
+  background-color: #10b981;
+}
+
+.bestsellers-api__cart-btn.added:hover {
+  background-color: #059669;
+}
+
+.bestsellers-api__cart-icon-svg {
+  font-size: 1.125rem;
+}
+
+.bestsellers-api__cart-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.bestsellers-api__loading,
+.bestsellers-api__error {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.bestsellers-api__error {
+  color: #dc2626;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+

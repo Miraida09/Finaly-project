@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import "./Header.css";
+import "../../styles/badges.css";
 import { Link } from 'react-router-dom';
 import logo from "../../assets/svg/01.svg";
 import { FiSearch } from "react-icons/fi";
@@ -12,6 +14,11 @@ function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const drawerRef = useRef(null);
     const firstLinkRef = useRef(null);
+    
+    const wishlistIds = useSelector((state) => state.wishlist?.ids) || [];
+    const cartItems = useSelector((state) => state.cart?.items) || [];
+    const wishlistCount = Array.isArray(wishlistIds) ? wishlistIds.length : 0;
+    const cartCount = Array.isArray(cartItems) ? cartItems.reduce((sum, item) => sum + (Number(item.qty) || 0), 0) : 0;
 
 
     useEffect(() => {
@@ -102,18 +109,24 @@ function Header() {
 
 
                         <div className='header__icons'>
-                            <div className='header__icon-btn' aria-label="Wishlist">
-                                <Link to="/like" >  <FaRegHeart /> </Link>
-
-
-
+                            <div className='header__icon-btn icon-badge' aria-label="Wishlist">
+                                <Link to="/like">
+                                    <FaRegHeart />
+                                    {wishlistCount > 0 && (
+                                        <span className="icon-badge__count">{wishlistCount}</span>
+                                    )}
+                                </Link>
                             </div>
                             <div className=''>
                                 <Link to="res"> <CgProfile /> </Link>
-
                             </div>
-                            <div className='header__icon-btn' aria-label="Cart">
-                                <Link to="card"><IoBagOutline /> </Link>
+                            <div className='header__icon-btn icon-badge' aria-label="Cart">
+                                <Link to="card">
+                                    <IoBagOutline />
+                                    {cartCount > 0 && (
+                                        <span className="icon-badge__count">{cartCount}</span>
+                                    )}
+                                </Link>
                             </div>
 
                             <button

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/home.css";
 import Banner from "../components/Banner/Banner";
 import Delivery from "../components/Delivery/Delivery";
-import Card from "../components/Card/Card";
+import BestSellersApi from "../components/BestSellersApi";
 import Information from "../components/Information/Information";
 import Aboutus from "../components/Aboutus/Aboutus";
 import Info from "../components/Info/Info";
@@ -28,7 +28,7 @@ function Home() {
       <Delivery />
 
 
-      <Card />
+      <BestSellersApi />
 
 
       <Information />

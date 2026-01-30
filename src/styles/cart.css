@@ -1,0 +1,333 @@
+.cart-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 60vh;
+}
+
+.cart-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cart-page__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cart-page__return-link {
+  color: #7a2d3a;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.cart-page__return-link:hover {
+  color: #5a1d2a;
+}
+
+.cart-page__empty {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.cart-page__empty-text {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.cart-page__content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 968px) {
+  .cart-page__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-page__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-page__item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 640px) {
+  .cart-page__item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.cart-page__item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .cart-page__item-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+.cart-page__item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart-page__item-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cart-page__item-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cart-page__item-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.cart-page__item-old-price {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.cart-page__item-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+@media (max-width: 640px) {
+  .cart-page__item-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.cart-page__qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.cart-page__qty-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #7a2d3a;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart-page__qty-btn:hover {
+  background-color: #f3d8de;
+}
+
+.cart-page__qty-value {
+  min-width: 32px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.cart-page__remove-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-page__remove-btn:hover {
+  background-color: #fef2f2;
+}
+
+.cart-page__totals {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 2rem;
+}
+
+.cart-page__totals-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.cart-page__totals-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-page__totals-row--total {
+  border-bottom: none;
+  border-top: 2px solid #e5e7eb;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  font-weight: 600;
+}
+
+.cart-page__totals-label {
+  font-size: 1rem;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.cart-page__totals-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.cart-page__checkout-btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: #7a2d3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart-page__checkout-btn:hover {
+  background-color: #5a1d2a;
+}
+
+.cart-page__free-shipping {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f3d8de;
+  color: #7a2d3a;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.cart-page__clear-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-page__clear-btn:hover {
+  background-color: #fef2f2;
+}
+
+.cart-page__continue-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  background-color: #ffffff;
+  color: #7a2d3a;
+  border: 2px solid #7a2d3a;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.cart-page__continue-btn:hover {
+  background-color: #7a2d3a;
+  color: #ffffff;
+}
+
+.cart-page__back-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #ffffff;
+  color: #7a2d3a;
+  border: 2px solid #7a2d3a;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cart-page__back-btn:hover {
+  background-color: #7a2d3a;
+  color: #ffffff;
+}
+

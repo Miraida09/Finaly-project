@@ -7,20 +7,25 @@ import Contact from "./pages/Contact";
 import Catigori from "./pages/Catigori";
 import Contacts from "./pages/Contacts";
 import Res from "./pages/Res";
-import LIke from "./pages/LIke";
+import Like from "./pages/Like";
 import Card from "./pages/Card";
 import Review from "./pages/Review"
 import Detalis from "./pages/Detalis";
 import Peony from "./pages/Peony";
 import Tulip from "./pages/Tulip";
 import Violet from "./pages/Violet";
-import Strawberries from "./pages/strawberries";
+import Strawberries from "./pages/Strawberries";
 import Rose from "./pages/Rose";
 import Chamomlie from "./pages/Chamomlie";
 import Lily from "./pages/Lily";
+import ProductsPage from "./admin/pages/ProductsPage";
 
 
 const myRouter = createBrowserRouter([
+    {
+        path: "/admin/products",
+        element: <ProductsPage />
+    },
     {
         path: "/",
         element: <Layout />,
@@ -56,7 +61,7 @@ const myRouter = createBrowserRouter([
             },
             {
                 path: "like",
-                element: <LIke />
+                element: <Like />
             },
 
             {
