@@ -10,7 +10,7 @@
 
 .auth-page__card {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--card);
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -18,31 +18,32 @@
 
 .auth-page__tabs {
   display: flex;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
 }
 
 .auth-page__tab {
   flex: 1;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--card);
   border: none;
   border-bottom: 2px solid transparent;
   font-size: 1rem;
   font-weight: 500;
-  color: #6b7280;
+  color: var(--text);
+  opacity: 0.7;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .auth-page__tab:hover {
-  background-color: #f9fafb;
-  color: #1f2937;
+  opacity: 1;
 }
 
 .auth-page__tab--active {
-  color: #7a2d3a;
-  border-bottom-color: #7a2d3a;
-  background-color: #ffffff;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background-color: var(--card);
+  opacity: 1;
 }
 
 .auth-page__content {
@@ -64,23 +65,25 @@
 .auth-page__label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #374151;
+  color: var(--text);
 }
 
 .auth-page__input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border);
   border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
+  background-color: var(--card);
+  color: var(--text);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   box-sizing: border-box;
 }
 
 .auth-page__input:focus {
   outline: none;
-  border-color: #7a2d3a;
+  border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(122, 45, 58, 0.1);
 }
 
@@ -111,23 +114,23 @@
 .auth-page__submit-btn {
   width: 100%;
   padding: 0.75rem 1.5rem;
-  background-color: #7a2d3a;
+  background-color: var(--accent);
   color: #ffffff;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
   margin-top: 0.5rem;
 }
 
 .auth-page__submit-btn:hover:not(:disabled) {
-  background-color: #5a1d2a;
+  opacity: 0.9;
 }
 
 .auth-page__submit-btn:disabled {
-  background-color: #9ca3af;
+  background-color: var(--border);
   cursor: not-allowed;
   opacity: 0.6;
 }

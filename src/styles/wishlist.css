@@ -65,7 +65,7 @@
 .wishlist-page__card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--card);
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -93,7 +93,7 @@
 .wishlist-page__card-title {
   font-size: 1rem;
   font-weight: 500;
-  color: #1f2937;
+  color: var(--text);
   margin: 0;
   text-transform: uppercase;
 }
@@ -108,13 +108,14 @@
 .wishlist-page__card-price {
   font-size: 1rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text);
   margin: 0;
 }
 
 .wishlist-page__old-price {
   font-size: 0.875rem;
-  color: #9ca3af;
+  color: var(--text);
+  opacity: 0.5;
   text-decoration: line-through;
   margin: 0;
 }
@@ -128,50 +129,50 @@
 .wishlist-page__remove-btn {
   flex: 1;
   padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  color: #7a2d3a;
-  border: 1px solid #7a2d3a;
+  background-color: var(--card);
+  color: var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .wishlist-page__remove-btn:hover {
-  background-color: #f3d8de;
+  opacity: 0.8;
 }
 
 .wishlist-page__cart-btn {
   flex: 1;
   padding: 0.5rem 1rem;
-  background-color: #7a2d3a;
+  background-color: var(--accent);
   color: #ffffff;
   border: none;
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .wishlist-page__cart-btn:hover {
-  background-color: #5a1d2a;
+  opacity: 0.9;
 }
 
 .wishlist-page__footer {
   text-align: center;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border);
 }
 
 .wishlist-page__back-btn {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #ffffff;
-  color: #7a2d3a;
-  border: 2px solid #7a2d3a;
+  background-color: var(--card);
+  color: var(--accent);
+  border: 2px solid var(--accent);
   border-radius: 0.5rem;
   text-decoration: none;
   font-size: 1rem;
@@ -180,7 +181,7 @@
 }
 
 .wishlist-page__back-btn:hover {
-  background-color: #7a2d3a;
+  background-color: var(--accent);
   color: #ffffff;
 }
 

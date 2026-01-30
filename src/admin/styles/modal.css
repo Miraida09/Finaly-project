@@ -9,7 +9,7 @@
 }
 
 .modal-content {
-  background-color: #ffffff;
+  background-color: var(--card);
   border-radius: 0.5rem;
   padding: 1.5rem;
   max-width: 32rem;
@@ -23,12 +23,12 @@
 .modal-header {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text);
   margin-bottom: 1.5rem;
 }
 
 .modal-body {
-  color: #374151;
+  color: var(--text);
   margin-bottom: 1.5rem;
 }
 
@@ -38,7 +38,7 @@
 
 .modal-body .product-name {
   font-weight: 600;
-  color: #7a2d3a;
+  color: var(--accent);
 }
 
 .modal-footer {

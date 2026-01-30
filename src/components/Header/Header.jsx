@@ -10,11 +10,13 @@ import { IoBagOutline } from "react-icons/io5";
 import { FaRegHeart, FaBars, FaTimes } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { logout } from '../../redux/authSlice';
+import { useTheme } from '../../hooks/useTheme';
 
 
 function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { theme, toggleTheme } = useTheme();
     const [menuOpen, setMenuOpen] = useState(false);
     const drawerRef = useRef(null);
     const firstLinkRef = useRef(null);
@@ -167,6 +169,14 @@ function Header() {
                                     )}
                                 </Link>
                             </div>
+
+                            <button
+                                className='header__theme-toggle'
+                                onClick={toggleTheme}
+                                aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                            >
+                                {theme === 'light' ? '🌙' : '☀️'}
+                            </button>
 
                             <button
                                 className='header__hamburger'
